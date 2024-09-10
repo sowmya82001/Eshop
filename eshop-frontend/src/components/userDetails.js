@@ -1,8 +1,9 @@
 import React, { Component, useEffect, useState } from "react";
-import AdminHome from "./adminHome";
+
 import "../App.css";
-import UserHome from "./userHome";
+
 import { Navigate } from "react-router-dom";
+import HomePage from "./HomePage";
 
 export default function UserDetails() {
   const [userData, setUserData] = useState("");
@@ -38,5 +39,5 @@ export default function UserDetails() {
       });
   }, []);
 
-  return admin? <AdminHome/> : <UserHome userData={userData} />;
+  return  <HomePage userData={userData} />;
 }

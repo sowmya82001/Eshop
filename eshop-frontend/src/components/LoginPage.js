@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "../App.css";
 
 export default function Login() {
@@ -34,9 +35,9 @@ export default function Login() {
           
           if (data.userType === "Admin") {
             
-            return (window.location.href = "./admin-dashboard");
+            return (window.location.href = "./");
           } else {
-            window.location.href = "./userDetails";
+            window.location.href = "./";
           }
         }
       });

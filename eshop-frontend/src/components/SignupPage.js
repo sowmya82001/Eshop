@@ -37,7 +37,7 @@ export default function SignUp() {
         .then((data) => {
           console.log(data, "userRegister");
           if (data.status == "ok") {
-            alert("Registration Successful");
+            alert("Signup Successful");
           } else {
             alert("Something went wrong");
           }
@@ -49,7 +49,7 @@ export default function SignUp() {
     <div className="auth-wrapper">
       <div className="auth-inner">
         <form onSubmit={handleSubmit}>
-          <h3>Register</h3>
+          <h3>SignUp</h3>
           <div>
             Register As
             <input
@@ -121,11 +121,11 @@ export default function SignUp() {
 
           <div className="d-grid">
             <button type="submit" className="btn btn-primary">
-              Register
+              SignUp
             </button>
           </div>
           <p className="forgot-password text-right">
-            Already registered <a href="/login">Login?</a>
+            Already SignUp <a href="/login">Login?</a>
           </p>
         </form>
       </div>

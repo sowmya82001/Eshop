@@ -1,0 +1,169 @@
+/* HomePage Styles */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .homepage-header {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust height as needed */
+    background-image: url('https://www.kotak.com/content/dam/Kotak/article-images/shopping-for-new-year-why-use-your-credit-card-d.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .header-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .homepage-search-form {
+    position: absolute;
+    bottom: 20px; /* Adjust the position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+  
+  .homepage-search-input {
+    border-radius: 0; /* Remove border-radius for seamless integration */
+  }
+  
+  .homepage-search-button {
+    border-radius: 0; /* Remove border-radius for seamless integration */
+  }
+ /* src/components/HomePage.css */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.homepage-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-content {
+  margin-bottom: 20px;
+}
+
+.homepage-search-form {
+  margin: 20px 0;
+}
+
+.homepage-search-input {
+  border-radius: 20px;
+}
+
+.homepage-search-button {
+  border-radius: 20px;
+}
+
+.why-shop-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px 20px;
+  padding: 20px;
+  background-color:rgb(194, 159, 207);
+  border-radius: 8px;
+}
+
+.why-shop-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.why-shop-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.why-shop-item {
+  flex: 1 1 calc(25% - 20px); /* Adjust to fit 4 items in a row */
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.why-shop-item h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.why-shop-item p {
+  color: #666;
+}
+
+/* Additional CSS to ensure responsiveness */
+@media (max-width: 1024px) {
+  .why-shop-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .why-shop-item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .why-shop-item {
+    flex: 1 1 100%; /* 1 item per row on very small screens */
+  }
+}
+
+
+
+  /* Gallery Section */
+  .homepage-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .homepage-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
